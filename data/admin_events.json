@@ -1,0 +1,65 @@
+[
+  {
+    "id": "EVT-1791975388173-224",
+    "timestamp": "2026-10-14T10:56:28.173Z",
+    "timeFormatted": "2026.10.14 10:56:28",
+    "type": "order_registered",
+    "status": "received",
+    "orderId": "MYS-TEST-CUR",
+    "orderSummary": "Тест (Love Reading - 9900₮)",
+    "results": {
+      "telegram": "Тохируулаагүй (Bot token / Chat ID хоосон)",
+      "webhook": "Тохируулаагүй (Webhook URL хоосон)",
+      "emailNotice": "Админ имэйл хаяг бүртгэгдсэн: amgalanbaatar652@gmail.com"
+    }
+  },
+  {
+    "id": "EVT-1791973450458-84",
+    "timestamp": "2026-10-14T10:24:10.458Z",
+    "timeFormatted": "2026.10.14 10:24:10",
+    "type": "order_registered",
+    "status": "received",
+    "orderId": "MYS-7086",
+    "orderSummary": "amgalanbaatar652 (Love & Relationship Reading - 9900₮)",
+    "results": {
+      "telegram": "Тохируулаагүй (Bot token / Chat ID хоосон)",
+      "webhook": "Тохируулаагүй (Webhook URL хоосон)",
+      "emailNotice": "Админ имэйл хаяг бүртгэгдсэн: amgalanbaatar652@gmail.com"
+    }
+  },
+  {
+    "id": "EVT-1791973419877-364",
+    "timestamp": "2026-10-14T10:23:39.877Z",
+    "timeFormatted": "2026.10.14 10:23:39",
+    "type": "order_registered",
+    "status": "received",
+    "orderId": "MYS-9242",
+    "orderSummary": "amgalanbaatar652 (Love & Relationship Reading - 9900₮)",
+    "results": {
+      "telegram": "Тохируулаагүй (Bot token / Chat ID хоосон)",
+      "webhook": "Тохируулаагүй (Webhook URL хоосон)",
+      "emailNotice": "Админ имэйл хаяг бүртгэгдсэн: amgalanbaatar652@gmail.com"
+    }
+  },
+  {
+    "id": "EVT-1791973074187-251",
+    "timestamp": "2026-10-14T10:17:54.187Z",
+    "timeFormatted": "2026.10.14 10:17:54",
+    "type": "order_deleted",
+    "orderId": "TEST-9543"
+  },
+  {
+    "id": "EVT-1791973064919-20",
+    "timestamp": "2026-10-14T10:17:44.919Z",
+    "timeFormatted": "2026.10.14 10:17:44",
+    "type": "order_registered",
+    "status": "received",
+    "orderId": "TEST-9543",
+    "orderSummary": "Тест Захиалагч (Админ шалгалт) (VIP ULTIMATE READING (Тест шалгалт) - 19900₮)",
+    "results": {
+      "telegram": "Тохируулаагүй (Bot token / Chat ID хоосон)",
+      "webhook": "Тохируулаагүй (Webhook URL хоосон)",
+      "emailNotice": "Админ имэйл хаяг бүртгэгдсэн: amgalanbaatar652@gmail.com"
+    }
+  }
+]

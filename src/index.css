@@ -1,0 +1,259 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Cinzel', 'Montserrat', Georgia, serif;
+  --font-mystic: 'Cinzel', 'Montserrat', Georgia, serif;
+  --font-cinzel: 'Cinzel', 'Montserrat', Georgia, serif;
+  --font-montserrat: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
+  :root {
+    --blush-bg: #DDB8AF;
+    --blush-bg-soft: #E5C7BF;
+    --blush-bg-light: #EED7CF;
+    --blush-card: rgba(255, 248, 245, 0.65);
+    --blush-border: rgba(140, 89, 77, 0.22);
+    --plum-text: #2F171E;
+    --plum-muted: #5E4347;
+    --bronze-accent: #9A5A4A;
+    --bronze-glow: #BA7765;
+    --cta-btn: #4D2630;
+    --cta-btn-hover: #3E1D26;
+  }
+
+  body {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #DAB3AA;
+    color: #230E16;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-serif, .font-mystic, .font-cinzel {
+    font-family: 'Cinzel', 'Montserrat', Georgia, serif;
+    letter-spacing: 0.02em;
+  }
+
+  .font-sans, .font-montserrat {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  .font-cormorant {
+    font-family: 'Cinzel', 'Montserrat', Georgia, serif;
+  }
+}
+
+/* =========================================================
+   REFINED TYPOGRAPHY & COLOR HARMONY (Монгол үсэг & Дэвсгэр өнгөний зохицол)
+   ========================================================= */
+
+/* Deep burnished bronze-gold with high contrast on blush backgrounds */
+.gold-text-luxury {
+  background: linear-gradient(135deg, #240E16 0%, #4D1E16 30%, #7E3A19 55%, #4D1E16 80%, #240E16 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: #240E16;
+  display: inline-block;
+  text-shadow: 0 1px 2px rgba(255, 240, 235, 0.4);
+}
+
+/* Radiant pure gold for dark surfaces, cards, and modals */
+.gold-text-bright {
+  background: linear-gradient(135deg, #FFF6E0 0%, #F5D38A 25%, #E5BA5F 50%, #FFEDB8 75%, #D4A346 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Elegant deep bronze/cognac italic emphasis with full Cyrillic support */
+.gold-italic, .bronze-italic {
+  font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+  font-weight: 700;
+  color: #6C281B;
+  background: linear-gradient(135deg, #3D140C 0%, #762D1A 40%, #A24823 70%, #3D140C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+  letter-spacing: 0.015em;
+  text-shadow: 0 1px 2px rgba(255, 245, 240, 0.4);
+}
+
+/* Refined Kicker for uppercase Cyrillic badges */
+.gold-kicker {
+  color: #6E2D1F;
+  letter-spacing: 0.28em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Luxury Gold Glow border & highlight */
+.gold-glow {
+  text-shadow: 0 0 16px rgba(230, 194, 117, 0.45);
+}
+
+.gold-border-refined {
+  border-color: rgba(197, 147, 69, 0.4);
+}
+
+.gold-border-refined:hover {
+  border-color: rgba(212, 163, 70, 0.75);
+  box-shadow: 0 0 18px rgba(212, 163, 70, 0.2);
+}
+
+/* Celestial Dusty Rose / Champagne Cloud Gradient */
+.bg-mystic-sky {
+  background: 
+    radial-gradient(ellipse at 50% 15%, rgba(247, 226, 219, 0.85) 0%, rgba(226, 194, 185, 0.95) 45%, rgba(206, 169, 160, 1) 100%);
+}
+
+.bg-nebula-clouds {
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(255, 240, 235, 0.45) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 230, 220, 0.4) 0%, transparent 45%),
+    radial-gradient(circle at 50% 70%, rgba(240, 205, 195, 0.5) 0%, transparent 60%);
+}
+
+/* Glass & Card Surfaces */
+.card-blush-glass {
+  background-color: rgba(255, 250, 248, 0.72);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(154, 90, 74, 0.2);
+}
+
+.card-blush-glass-hover:hover {
+  border-color: rgba(154, 90, 74, 0.45);
+  box-shadow: 0 10px 30px -8px rgba(100, 50, 40, 0.12);
+}
+
+.card-dark-tarot {
+  background: linear-gradient(145deg, #121A26 0%, #0B111A 100%);
+  border: 1px solid rgba(220, 185, 130, 0.4);
+  box-shadow: 0 14px 35px -8px rgba(25, 15, 20, 0.4);
+}
+
+/* Typography Accent Highlights */
+.bronze-italic {
+  font-family: 'Cinzel', serif;
+  font-style: italic;
+  color: #9C5F4F;
+  background: linear-gradient(135deg, #A86554 0%, #8C4D3D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #D5ADA2;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(110, 60, 50, 0.35);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(110, 60, 50, 0.6);
+}
+
+/* 3D Card Flipping & Shuffling Styles */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.transform-style-3d, .preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+.rotate-y-0 {
+  transform: rotateY(0deg);
+}
+
+/* 3D Spin & Celestial Glow for selected tarot cards */
+@keyframes spinCard3D {
+  0% {
+    transform: rotateY(0deg) scale(1) translateZ(0);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 15px rgba(222, 183, 106, 0.3);
+  }
+  25% {
+    transform: rotateY(90deg) scale(1.08) translateZ(40px) rotateZ(-3deg);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.6), 0 0 35px rgba(232, 188, 176, 0.8), 0 0 50px rgba(222, 183, 106, 0.6);
+  }
+  50% {
+    transform: rotateY(180deg) scale(1.12) translateZ(60px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), 0 0 55px rgba(245, 214, 206, 0.9), 0 0 70px rgba(222, 183, 106, 0.7);
+  }
+  75% {
+    transform: rotateY(270deg) scale(1.08) translateZ(40px) rotateZ(3deg);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.6), 0 0 35px rgba(232, 188, 176, 0.8), 0 0 50px rgba(222, 183, 106, 0.6);
+  }
+  100% {
+    transform: rotateY(360deg) scale(1) translateZ(0);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 25px rgba(222, 183, 106, 0.5);
+  }
+}
+
+.animate-card-spin-3d {
+  animation: spinCard3D 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.tarot-glow-celestial {
+  box-shadow: 0 0 25px rgba(222, 183, 106, 0.55), 0 0 45px rgba(232, 188, 176, 0.35), 0 12px 30px rgba(10, 5, 8, 0.5);
+  transition: all 0.4s ease;
+}
+
+.tarot-glow-celestial:hover {
+  box-shadow: 0 0 35px rgba(222, 183, 106, 0.8), 0 0 60px rgba(245, 214, 206, 0.6), 0 16px 40px rgba(10, 5, 8, 0.6);
+}
+
+.tarot-aura-ring {
+  background: radial-gradient(circle, rgba(232, 188, 176, 0.3) 0%, rgba(222, 183, 106, 0.2) 50%, transparent 70%);
+}
+
+@keyframes shuffleLeft {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(-65px, -15px) rotate(-14deg); }
+  50% { transform: translate(-45px, 10px) rotate(-8deg); }
+  75% { transform: translate(-20px, -5px) rotate(-3deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes shuffleRight {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(65px, -15px) rotate(14deg); }
+  50% { transform: translate(45px, 10px) rotate(8deg); }
+  75% { transform: translate(20px, -5px) rotate(3deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes shuffleCascade {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-18px) scale(1.04); }
+}
+
+.animate-shuffle-left {
+  animation: shuffleLeft 0.7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-shuffle-right {
+  animation: shuffleRight 0.7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-shuffle-cascade {
+  animation: shuffleCascade 0.5s ease-in-out infinite;
+}
+
+

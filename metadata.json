@@ -1,0 +1,7 @@
+{
+  "name": "MYSTIC - Тоон зурхай ба Таро уншлага",
+  "description": "Орчин үеийн тансаг Champagne Pink дизайнтай монгол хэл дээрх тоон зурхай (Numerology) болон Tarot хөзрийн уншлагын платформ.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
